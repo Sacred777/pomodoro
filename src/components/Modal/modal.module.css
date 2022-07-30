@@ -1,0 +1,45 @@
+.overlay {
+  --transitionTime: 0.3s;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transitionTime), visibility var(--transitionTime);
+}
+
+.overlay::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.isActive {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transitionTime), visibility var(--transitionTime);
+}
+
+.modal {
+  position: relative;
+  display: inline-block;
+  margin: 50px auto;
+  vertical-align: middle;
+  background-color: var(--white);
+  cursor: default;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

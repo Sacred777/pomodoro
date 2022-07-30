@@ -1,0 +1,62 @@
+.wrapper {
+  padding: 50px;
+}
+
+body[data-theme="night"] .wrapper {
+  background-color: var(--greyDE);
+}
+
+.listItem label {
+  display: block;
+  margin: 5px;
+  padding: 0 5px;
+  text-align: initial;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.redSlider {
+  width: 320px;
+  height: 40px;
+  border: 2px solid var(--cinnabar);
+}
+
+body[data-theme="night"] .redSlider {
+  filter: invert(100%);
+}
+
+.redThumb {
+  display: block;
+  height: 36px;
+  width: 40px;
+  background-color: var(--cinnabar);
+  cursor: pointer;
+  transition: background-color var(--duration) ease-in-out;
+}
+
+.redThumb:hover {
+  background-color: var(--hdo);
+}
+
+.greenSlider {
+  height: 40px;
+  border: 2px solid var(--celery);
+}
+
+body[data-theme="night"] .greenSlider {
+  filter: invert(100%);
+}
+
+.greenThumb {
+  height: 36px;
+  width: 40px;
+  background-color: var(--celery);
+  cursor: pointer;
+  transition: background-color var(--duration) ease-in-out;
+}
+
+.greenThumb:hover {
+  background-color: var(--wasabi);
+}

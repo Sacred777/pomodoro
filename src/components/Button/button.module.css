@@ -1,0 +1,74 @@
+.button {
+  padding: 19px 50px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 500;
+  color: var(--white);
+  transition-property: color, background-color, border-color;
+  transition-duration: var(--duration);
+  transition-timing-function: ease-in-out;
+}
+
+.button:disabled {
+  cursor: initial;
+}
+
+.green {
+  background-color: var(--celery);
+  border-color: var(--celery);
+}
+
+.green:disabled {
+  opacity: 60%;
+}
+
+.green:not(:disabled):hover {
+  background-color: var(--wasabi);
+}
+
+.green:not(:disabled):focus {
+  outline: none;
+  background-color: var(--wasabi);
+}
+
+.red {
+  border-color: var(--cinnabar);
+}
+
+.red:hover {
+  background-color: var(--cinnabar);
+  border-color: var(--cinnabar);
+}
+
+.red:hover span {
+  color: white;
+}
+
+.red:focus {
+  outline: none;
+  background-color: var(--cinnabar);
+  border-color: var(--cinnabar);
+}
+
+.red:focus span {
+  color: white;
+}
+
+.notBackground {
+  background-color: transparent;
+}
+
+.red:not(:disabled).notBackground:hover {
+  background-color: var(--cinnabar);
+}
+
+.red:disabled {
+  border-color: var(--greyC4);
+  background-color: transparent;
+  cursor: initial;
+}
+
+.red:disabled span {
+  color: var(--greyC4);
+}

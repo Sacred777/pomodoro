@@ -1,0 +1,40 @@
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 18px 15px;
+  width: 370px;
+  background-color: var(--greyF4);
+  cursor: pointer;
+  transition: background-color var(--duration) ease-in-out;
+  z-index: 10;
+  filter: drop-shadow(0px 10px 63px rgba(0, 0, 0, 0.07));
+}
+
+.select:hover {
+  background-color: var(--greyEC);
+}
+
+.select svg {
+  transition: transform var(--duration) ease-in-out;
+  transform: rotate(0deg);
+}
+
+.opened {
+  background-color: var(--greyFA);
+}
+
+.opened {
+  border-top: 1px solid var(--greyDE);
+}
+
+.notBorder {
+  border-top: 1px solid transparent;
+}
+
+.opened svg {
+  transform: rotate(180deg);
+}
