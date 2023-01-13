@@ -1,1 +1,1 @@
-# pomodoro
+# Учет задач по методу Pomodoro
